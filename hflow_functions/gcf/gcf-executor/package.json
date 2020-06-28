@@ -1,0 +1,10 @@
+{
+  "name": "gcf-executor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "serverless-google-cloudfunctions": "^1.1.0",
+    "@google-cloud/storage": "^1.7.0",
+    "async": "^1.5.2"
+  }
+}

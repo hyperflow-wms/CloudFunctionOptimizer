@@ -1,0 +1,90 @@
+service: aws-executor-ellipsoids
+app: aws-executor-cfo-ellipsoids
+tenant: tenant
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: eu-central-1
+  timeout: 300
+  versionFunctions: false
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:PutObject"
+        - "s3:GetObject"
+      Resource: "arn:aws:s3:::hyperflow.workflow.test/*"
+
+functions:
+
+  aws-executor-128:
+    handler: handler.executor
+    description: AWS executor 128MB memory size
+    memorySize: 128
+    events:
+    - http:
+        path: aws-executor-128
+        method: post
+
+  aws-executor-256:
+    handler: handler.executor
+    description: AWS executor 256MB memory size
+    memorySize: 256
+    events:
+    - http:
+        path: aws-executor-256
+        method: post
+
+  aws-executor-512:
+    handler: handler.executor
+    description: AWS executor 512MB memory size
+    memorySize: 512
+    events:
+    - http:
+        path: aws-executor-512
+        method: post
+
+  aws-executor-1024:
+    handler: handler.executor
+    description: AWS executor 1024MB memory size
+    memorySize: 1024
+    events:
+    - http:
+        path: aws-executor-1024
+        method: post
+  
+  aws-executor-1536:
+    handler: handler.executor
+    description: AWS executor 1536MB memory size
+    memorySize: 1536
+    events:
+    - http:
+        path: aws-executor-1536
+        method: post
+
+  aws-executor-2048:
+      handler: handler.executor
+      description: AWS executor 2048MB memory size
+      memorySize: 2048
+      events:
+      - http:
+          path: aws-executor-2048
+          method: post
+
+  aws-executor-2560:
+      handler: handler.executor
+      description: AWS executor 2560MB memory size
+      memorySize: 2560
+      events:
+      - http:
+          path: aws-executor-2560
+          method: post
+
+  aws-executor-3008:
+      handler: handler.executor
+      description: AWS executor 3008MB memory size
+      memorySize: 3008
+      events:
+      - http:
+          path: aws-executor-3008
+          method: post

@@ -1,0 +1,22 @@
+{
+  "name": "CloudFunctionOptimizer",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "bluebird": "^3.5.0",
+    "csv": "3.0.2",
+    "csv-parse": "^2.5.0",
+    "fast-csv": "2.4.1",
+    "serverless-google-cloudfunctions": "^1.2.0",
+    "toposort": "^1.0.7",
+    "hyperflow": "git://github.com/PawelBanach/hyperflow.git#master"
+  },
+  "scripts": {
+    "start": "node --use_strict app.js",
+    "test": "./tests/test.sh"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}

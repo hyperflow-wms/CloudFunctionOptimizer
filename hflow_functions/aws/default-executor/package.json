@@ -1,0 +1,9 @@
+{
+  "name": "awslambda-executor",
+  "version": "1.0.0",
+  "dependencies": {
+    "async": "",
+    "aws-sdk": "",
+    "fs-extra": "latest"
+  }
+}

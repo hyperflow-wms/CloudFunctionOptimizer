@@ -1,0 +1,244 @@
+{
+  "functions": [
+    {
+      "name": "testCommand",
+      "module": "functions"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "level1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level1",
+          "args": []
+        },
+        "id": 1
+      },
+      "ins": [
+        0
+      ],
+      "outs": [
+        1
+      ],
+      "startTime": {
+        "type1": 0,
+        "type2": 0
+      },
+      "finishTime": {
+        "type1": 5000,
+        "type2": 10000
+      }
+    },
+    {
+      "name": "level2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level2",
+          "args": []
+        },
+        "id": 2
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        2
+      ],
+      "startTime": {
+        "type1": 5000,
+        "type2": 10000
+      },
+      "finishTime": {
+        "type1": 7100,
+        "type2": 14200
+      }
+    },
+    {
+      "name": "level2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level2",
+          "args": []
+        },
+        "id": 3
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        3
+      ],
+      "startTime": {
+        "type1": 5000,
+        "type2": 10000
+      },
+      "finishTime": {
+        "type1": 7000,
+        "type2": 14000
+      }
+    },
+    {
+      "name": "level2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level2",
+          "args": []
+        },
+        "id": 4
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        4
+      ],
+      "startTime": {
+        "type1": 5000,
+        "type2": 10000
+      },
+      "finishTime": {
+        "type1": 7200,
+        "type2": 14400
+      }
+    },
+    {
+      "name": "level3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level3",
+          "args": []
+        },
+        "id": 5
+      },
+      "ins": [
+        2,
+        3,
+        4
+      ],
+      "outs": [
+        5
+      ],
+      "startTime": {
+        "type1": 7200,
+        "type2": 14400
+      },
+      "finishTime": {
+        "type1": 22200,
+        "type2": 44400
+      }
+    },
+    {
+      "name": "level4",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level4",
+          "args": []
+        },
+        "id": 6
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        6
+      ],
+      "startTime": {
+        "type1": 22200,
+        "type2": 44400
+      },
+      "finishTime": {
+        "type1": 25000,
+        "type2": 50000
+      }
+    },
+    {
+      "name": "level4",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level4",
+          "args": []
+        },
+        "id": 7
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        7
+      ],
+      "startTime": {
+        "type1": 22200,
+        "type2": 44400
+      },
+      "finishTime": {
+        "type1": 25200,
+        "type2": 50400
+      }
+    },
+    {
+      "name": "level5",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "executor": "syscommand",
+      "firingLimit": 1,
+      "config": {
+        "executor": {
+          "executable": "level5",
+          "args": []
+        },
+        "id": 8
+      },
+      "ins": [
+        6,
+        7
+      ],
+      "outs": [
+        8
+      ],
+      "startTime": {
+        "type1": 25200,
+        "type2": 50400
+      },
+      "finishTime": {
+        "type1": 35200,
+        "type2": 70400
+      }
+    }
+  ],
+  "data": [],
+  "ins": [
+    0
+  ],
+  "outs": [
+    8
+  ]
+}

@@ -1,0 +1,2631 @@
+{
+  "tasks": [
+    {
+      "name": "generateData",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "generateData.js",
+          "args": []
+        }
+      },
+      "ins": [
+        0
+      ],
+      "outs": [
+        1
+      ]
+    },
+    {
+      "name": "create_dat_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "0.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        2
+      ]
+    },
+    {
+      "name": "create_dat_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "1.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        3
+      ]
+    },
+    {
+      "name": "create_dat_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "2.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        4
+      ]
+    },
+    {
+      "name": "create_dat_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "3.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        5
+      ]
+    },
+    {
+      "name": "execute_case_0_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "00.log",
+            "00.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "execute_case_0_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "01.log",
+            "01.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "execute_case_0_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "02.log",
+            "02.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "execute_case_0_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "03.log",
+            "03.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "execute_case_0_4",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "04.log",
+            "04.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "execute_case_0_5",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "05.log",
+            "05.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        16,
+        17
+      ]
+    },
+    {
+      "name": "execute_case_0_6",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "06.log",
+            "06.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        18,
+        19
+      ]
+    },
+    {
+      "name": "execute_case_0_7",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "07.log",
+            "07.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        20,
+        21
+      ]
+    },
+    {
+      "name": "execute_case_0_8",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "08.log",
+            "08.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        22,
+        23
+      ]
+    },
+    {
+      "name": "execute_case_0_9",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "09.log",
+            "09.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        24,
+        25
+      ]
+    },
+    {
+      "name": "execute_case_0_10",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "010.log",
+            "010.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        26,
+        27
+      ]
+    },
+    {
+      "name": "execute_case_0_11",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "011.log",
+            "011.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        28,
+        29
+      ]
+    },
+    {
+      "name": "execute_case_0_12",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "012.log",
+            "012.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        30,
+        31
+      ]
+    },
+    {
+      "name": "execute_case_0_13",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "013.log",
+            "013.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        32,
+        33
+      ]
+    },
+    {
+      "name": "execute_case_0_14",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "014.log",
+            "014.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        34,
+        35
+      ]
+    },
+    {
+      "name": "execute_case_0_15",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "015.log",
+            "015.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        36,
+        37
+      ]
+    },
+    {
+      "name": "execute_case_0_16",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "016.log",
+            "016.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        38,
+        39
+      ]
+    },
+    {
+      "name": "execute_case_0_17",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "017.log",
+            "017.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        40,
+        41
+      ]
+    },
+    {
+      "name": "execute_case_0_18",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "018.log",
+            "018.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        42,
+        43
+      ]
+    },
+    {
+      "name": "execute_case_0_19",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "019.log",
+            "019.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        44,
+        45
+      ]
+    },
+    {
+      "name": "execute_case_1_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "10.log",
+            "10.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        46,
+        47
+      ]
+    },
+    {
+      "name": "execute_case_1_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "11.log",
+            "11.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        48,
+        49
+      ]
+    },
+    {
+      "name": "execute_case_1_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "12.log",
+            "12.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        50,
+        51
+      ]
+    },
+    {
+      "name": "execute_case_1_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "13.log",
+            "13.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        52,
+        53
+      ]
+    },
+    {
+      "name": "execute_case_1_4",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "14.log",
+            "14.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        54,
+        55
+      ]
+    },
+    {
+      "name": "execute_case_1_5",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "15.log",
+            "15.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        56,
+        57
+      ]
+    },
+    {
+      "name": "execute_case_1_6",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "16.log",
+            "16.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        58,
+        59
+      ]
+    },
+    {
+      "name": "execute_case_1_7",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "17.log",
+            "17.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        60,
+        61
+      ]
+    },
+    {
+      "name": "execute_case_1_8",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "18.log",
+            "18.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        62,
+        63
+      ]
+    },
+    {
+      "name": "execute_case_1_9",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "19.log",
+            "19.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        64,
+        65
+      ]
+    },
+    {
+      "name": "execute_case_1_10",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "110.log",
+            "110.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        66,
+        67
+      ]
+    },
+    {
+      "name": "execute_case_1_11",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "111.log",
+            "111.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        68,
+        69
+      ]
+    },
+    {
+      "name": "execute_case_1_12",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "112.log",
+            "112.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        70,
+        71
+      ]
+    },
+    {
+      "name": "execute_case_1_13",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "113.log",
+            "113.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        72,
+        73
+      ]
+    },
+    {
+      "name": "execute_case_1_14",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "114.log",
+            "114.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        74,
+        75
+      ]
+    },
+    {
+      "name": "execute_case_1_15",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "115.log",
+            "115.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        76,
+        77
+      ]
+    },
+    {
+      "name": "execute_case_1_16",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "116.log",
+            "116.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        78,
+        79
+      ]
+    },
+    {
+      "name": "execute_case_1_17",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "117.log",
+            "117.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        80,
+        81
+      ]
+    },
+    {
+      "name": "execute_case_1_18",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "118.log",
+            "118.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        82,
+        83
+      ]
+    },
+    {
+      "name": "execute_case_1_19",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "119.log",
+            "119.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        84,
+        85
+      ]
+    },
+    {
+      "name": "execute_case_2_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "20.log",
+            "20.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        86,
+        87
+      ]
+    },
+    {
+      "name": "execute_case_2_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "21.log",
+            "21.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        88,
+        89
+      ]
+    },
+    {
+      "name": "execute_case_2_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "22.log",
+            "22.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        90,
+        91
+      ]
+    },
+    {
+      "name": "execute_case_2_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "23.log",
+            "23.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        92,
+        93
+      ]
+    },
+    {
+      "name": "execute_case_2_4",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "24.log",
+            "24.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        94,
+        95
+      ]
+    },
+    {
+      "name": "execute_case_2_5",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "25.log",
+            "25.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        96,
+        97
+      ]
+    },
+    {
+      "name": "execute_case_2_6",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "26.log",
+            "26.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        98,
+        99
+      ]
+    },
+    {
+      "name": "execute_case_2_7",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "27.log",
+            "27.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        100,
+        101
+      ]
+    },
+    {
+      "name": "execute_case_2_8",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "28.log",
+            "28.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        102,
+        103
+      ]
+    },
+    {
+      "name": "execute_case_2_9",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "29.log",
+            "29.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        104,
+        105
+      ]
+    },
+    {
+      "name": "execute_case_2_10",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "210.log",
+            "210.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        106,
+        107
+      ]
+    },
+    {
+      "name": "execute_case_2_11",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "211.log",
+            "211.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        108,
+        109
+      ]
+    },
+    {
+      "name": "execute_case_2_12",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "212.log",
+            "212.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        110,
+        111
+      ]
+    },
+    {
+      "name": "execute_case_2_13",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "213.log",
+            "213.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        112,
+        113
+      ]
+    },
+    {
+      "name": "execute_case_2_14",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "214.log",
+            "214.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        114,
+        115
+      ]
+    },
+    {
+      "name": "execute_case_2_15",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "215.log",
+            "215.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        116,
+        117
+      ]
+    },
+    {
+      "name": "execute_case_2_16",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "216.log",
+            "216.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        118,
+        119
+      ]
+    },
+    {
+      "name": "execute_case_2_17",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "217.log",
+            "217.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        120,
+        121
+      ]
+    },
+    {
+      "name": "execute_case_2_18",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "218.log",
+            "218.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        122,
+        123
+      ]
+    },
+    {
+      "name": "execute_case_2_19",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "219.log",
+            "219.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        124,
+        125
+      ]
+    },
+    {
+      "name": "execute_case_3_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "30.log",
+            "30.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        126,
+        127
+      ]
+    },
+    {
+      "name": "execute_case_3_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "31.log",
+            "31.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        128,
+        129
+      ]
+    },
+    {
+      "name": "execute_case_3_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "32.log",
+            "32.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        130,
+        131
+      ]
+    },
+    {
+      "name": "execute_case_3_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "33.log",
+            "33.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        132,
+        133
+      ]
+    },
+    {
+      "name": "execute_case_3_4",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "34.log",
+            "34.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        134,
+        135
+      ]
+    },
+    {
+      "name": "execute_case_3_5",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "35.log",
+            "35.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        136,
+        137
+      ]
+    },
+    {
+      "name": "execute_case_3_6",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "36.log",
+            "36.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        138,
+        139
+      ]
+    },
+    {
+      "name": "execute_case_3_7",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "37.log",
+            "37.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        140,
+        141
+      ]
+    },
+    {
+      "name": "execute_case_3_8",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "38.log",
+            "38.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        142,
+        143
+      ]
+    },
+    {
+      "name": "execute_case_3_9",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "39.log",
+            "39.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        144,
+        145
+      ]
+    },
+    {
+      "name": "execute_case_3_10",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "310.log",
+            "310.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        146,
+        147
+      ]
+    },
+    {
+      "name": "execute_case_3_11",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "311.log",
+            "311.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        148,
+        149
+      ]
+    },
+    {
+      "name": "execute_case_3_12",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "312.log",
+            "312.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        150,
+        151
+      ]
+    },
+    {
+      "name": "execute_case_3_13",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "313.log",
+            "313.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        152,
+        153
+      ]
+    },
+    {
+      "name": "execute_case_3_14",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "314.log",
+            "314.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        154,
+        155
+      ]
+    },
+    {
+      "name": "execute_case_3_15",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "315.log",
+            "315.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        156,
+        157
+      ]
+    },
+    {
+      "name": "execute_case_3_16",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "316.log",
+            "316.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        158,
+        159
+      ]
+    },
+    {
+      "name": "execute_case_3_17",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "317.log",
+            "317.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        160,
+        161
+      ]
+    },
+    {
+      "name": "execute_case_3_18",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "318.log",
+            "318.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        162,
+        163
+      ]
+    },
+    {
+      "name": "execute_case_3_19",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "319.log",
+            "319.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        164,
+        165
+      ]
+    },
+    {
+      "name": "average_result_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "00.xoutput",
+            "01.xoutput",
+            "02.xoutput",
+            "03.xoutput",
+            "04.xoutput",
+            "05.xoutput",
+            "06.xoutput",
+            "07.xoutput",
+            "08.xoutput",
+            "09.xoutput",
+            "010.xoutput",
+            "011.xoutput",
+            "012.xoutput",
+            "013.xoutput",
+            "014.xoutput",
+            "015.xoutput",
+            "016.xoutput",
+            "017.xoutput",
+            "018.xoutput",
+            "019.xoutput",
+            "average_0.txt"
+          ]
+        }
+      },
+      "ins": [
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45
+      ],
+      "outs": [
+        166
+      ]
+    },
+    {
+      "name": "average_result_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "10.xoutput",
+            "11.xoutput",
+            "12.xoutput",
+            "13.xoutput",
+            "14.xoutput",
+            "15.xoutput",
+            "16.xoutput",
+            "17.xoutput",
+            "18.xoutput",
+            "19.xoutput",
+            "110.xoutput",
+            "111.xoutput",
+            "112.xoutput",
+            "113.xoutput",
+            "114.xoutput",
+            "115.xoutput",
+            "116.xoutput",
+            "117.xoutput",
+            "118.xoutput",
+            "119.xoutput",
+            "average_1.txt"
+          ]
+        }
+      },
+      "ins": [
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85
+      ],
+      "outs": [
+        167
+      ]
+    },
+    {
+      "name": "average_result_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "20.xoutput",
+            "21.xoutput",
+            "22.xoutput",
+            "23.xoutput",
+            "24.xoutput",
+            "25.xoutput",
+            "26.xoutput",
+            "27.xoutput",
+            "28.xoutput",
+            "29.xoutput",
+            "210.xoutput",
+            "211.xoutput",
+            "212.xoutput",
+            "213.xoutput",
+            "214.xoutput",
+            "215.xoutput",
+            "216.xoutput",
+            "217.xoutput",
+            "218.xoutput",
+            "219.xoutput",
+            "average_2.txt"
+          ]
+        }
+      },
+      "ins": [
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125
+      ],
+      "outs": [
+        168
+      ]
+    },
+    {
+      "name": "average_result_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "30.xoutput",
+            "31.xoutput",
+            "32.xoutput",
+            "33.xoutput",
+            "34.xoutput",
+            "35.xoutput",
+            "36.xoutput",
+            "37.xoutput",
+            "38.xoutput",
+            "39.xoutput",
+            "310.xoutput",
+            "311.xoutput",
+            "312.xoutput",
+            "313.xoutput",
+            "314.xoutput",
+            "315.xoutput",
+            "316.xoutput",
+            "317.xoutput",
+            "318.xoutput",
+            "319.xoutput",
+            "average_3.txt"
+          ]
+        }
+      },
+      "ins": [
+        127,
+        129,
+        131,
+        133,
+        135,
+        137,
+        139,
+        141,
+        143,
+        145,
+        147,
+        149,
+        151,
+        153,
+        155,
+        157,
+        159,
+        161,
+        163,
+        165
+      ],
+      "outs": [
+        169
+      ]
+    },
+    {
+      "name": "summary",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "summary.js",
+          "args": []
+        }
+      },
+      "ins": [
+        1,
+        169,
+        168,
+        167,
+        166
+      ],
+      "outs": [
+        170
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "generateData.js"
+    },
+    {
+      "name": "data.json"
+    },
+    {
+      "name": "0.dat"
+    },
+    {
+      "name": "1.dat"
+    },
+    {
+      "name": "2.dat"
+    },
+    {
+      "name": "3.dat"
+    },
+    {
+      "name": "00.log"
+    },
+    {
+      "name": "00.xoutput"
+    },
+    {
+      "name": "01.log"
+    },
+    {
+      "name": "01.xoutput"
+    },
+    {
+      "name": "02.log"
+    },
+    {
+      "name": "02.xoutput"
+    },
+    {
+      "name": "03.log"
+    },
+    {
+      "name": "03.xoutput"
+    },
+    {
+      "name": "04.log"
+    },
+    {
+      "name": "04.xoutput"
+    },
+    {
+      "name": "05.log"
+    },
+    {
+      "name": "05.xoutput"
+    },
+    {
+      "name": "06.log"
+    },
+    {
+      "name": "06.xoutput"
+    },
+    {
+      "name": "07.log"
+    },
+    {
+      "name": "07.xoutput"
+    },
+    {
+      "name": "08.log"
+    },
+    {
+      "name": "08.xoutput"
+    },
+    {
+      "name": "09.log"
+    },
+    {
+      "name": "09.xoutput"
+    },
+    {
+      "name": "010.log"
+    },
+    {
+      "name": "010.xoutput"
+    },
+    {
+      "name": "011.log"
+    },
+    {
+      "name": "011.xoutput"
+    },
+    {
+      "name": "012.log"
+    },
+    {
+      "name": "012.xoutput"
+    },
+    {
+      "name": "013.log"
+    },
+    {
+      "name": "013.xoutput"
+    },
+    {
+      "name": "014.log"
+    },
+    {
+      "name": "014.xoutput"
+    },
+    {
+      "name": "015.log"
+    },
+    {
+      "name": "015.xoutput"
+    },
+    {
+      "name": "016.log"
+    },
+    {
+      "name": "016.xoutput"
+    },
+    {
+      "name": "017.log"
+    },
+    {
+      "name": "017.xoutput"
+    },
+    {
+      "name": "018.log"
+    },
+    {
+      "name": "018.xoutput"
+    },
+    {
+      "name": "019.log"
+    },
+    {
+      "name": "019.xoutput"
+    },
+    {
+      "name": "10.log"
+    },
+    {
+      "name": "10.xoutput"
+    },
+    {
+      "name": "11.log"
+    },
+    {
+      "name": "11.xoutput"
+    },
+    {
+      "name": "12.log"
+    },
+    {
+      "name": "12.xoutput"
+    },
+    {
+      "name": "13.log"
+    },
+    {
+      "name": "13.xoutput"
+    },
+    {
+      "name": "14.log"
+    },
+    {
+      "name": "14.xoutput"
+    },
+    {
+      "name": "15.log"
+    },
+    {
+      "name": "15.xoutput"
+    },
+    {
+      "name": "16.log"
+    },
+    {
+      "name": "16.xoutput"
+    },
+    {
+      "name": "17.log"
+    },
+    {
+      "name": "17.xoutput"
+    },
+    {
+      "name": "18.log"
+    },
+    {
+      "name": "18.xoutput"
+    },
+    {
+      "name": "19.log"
+    },
+    {
+      "name": "19.xoutput"
+    },
+    {
+      "name": "110.log"
+    },
+    {
+      "name": "110.xoutput"
+    },
+    {
+      "name": "111.log"
+    },
+    {
+      "name": "111.xoutput"
+    },
+    {
+      "name": "112.log"
+    },
+    {
+      "name": "112.xoutput"
+    },
+    {
+      "name": "113.log"
+    },
+    {
+      "name": "113.xoutput"
+    },
+    {
+      "name": "114.log"
+    },
+    {
+      "name": "114.xoutput"
+    },
+    {
+      "name": "115.log"
+    },
+    {
+      "name": "115.xoutput"
+    },
+    {
+      "name": "116.log"
+    },
+    {
+      "name": "116.xoutput"
+    },
+    {
+      "name": "117.log"
+    },
+    {
+      "name": "117.xoutput"
+    },
+    {
+      "name": "118.log"
+    },
+    {
+      "name": "118.xoutput"
+    },
+    {
+      "name": "119.log"
+    },
+    {
+      "name": "119.xoutput"
+    },
+    {
+      "name": "20.log"
+    },
+    {
+      "name": "20.xoutput"
+    },
+    {
+      "name": "21.log"
+    },
+    {
+      "name": "21.xoutput"
+    },
+    {
+      "name": "22.log"
+    },
+    {
+      "name": "22.xoutput"
+    },
+    {
+      "name": "23.log"
+    },
+    {
+      "name": "23.xoutput"
+    },
+    {
+      "name": "24.log"
+    },
+    {
+      "name": "24.xoutput"
+    },
+    {
+      "name": "25.log"
+    },
+    {
+      "name": "25.xoutput"
+    },
+    {
+      "name": "26.log"
+    },
+    {
+      "name": "26.xoutput"
+    },
+    {
+      "name": "27.log"
+    },
+    {
+      "name": "27.xoutput"
+    },
+    {
+      "name": "28.log"
+    },
+    {
+      "name": "28.xoutput"
+    },
+    {
+      "name": "29.log"
+    },
+    {
+      "name": "29.xoutput"
+    },
+    {
+      "name": "210.log"
+    },
+    {
+      "name": "210.xoutput"
+    },
+    {
+      "name": "211.log"
+    },
+    {
+      "name": "211.xoutput"
+    },
+    {
+      "name": "212.log"
+    },
+    {
+      "name": "212.xoutput"
+    },
+    {
+      "name": "213.log"
+    },
+    {
+      "name": "213.xoutput"
+    },
+    {
+      "name": "214.log"
+    },
+    {
+      "name": "214.xoutput"
+    },
+    {
+      "name": "215.log"
+    },
+    {
+      "name": "215.xoutput"
+    },
+    {
+      "name": "216.log"
+    },
+    {
+      "name": "216.xoutput"
+    },
+    {
+      "name": "217.log"
+    },
+    {
+      "name": "217.xoutput"
+    },
+    {
+      "name": "218.log"
+    },
+    {
+      "name": "218.xoutput"
+    },
+    {
+      "name": "219.log"
+    },
+    {
+      "name": "219.xoutput"
+    },
+    {
+      "name": "30.log"
+    },
+    {
+      "name": "30.xoutput"
+    },
+    {
+      "name": "31.log"
+    },
+    {
+      "name": "31.xoutput"
+    },
+    {
+      "name": "32.log"
+    },
+    {
+      "name": "32.xoutput"
+    },
+    {
+      "name": "33.log"
+    },
+    {
+      "name": "33.xoutput"
+    },
+    {
+      "name": "34.log"
+    },
+    {
+      "name": "34.xoutput"
+    },
+    {
+      "name": "35.log"
+    },
+    {
+      "name": "35.xoutput"
+    },
+    {
+      "name": "36.log"
+    },
+    {
+      "name": "36.xoutput"
+    },
+    {
+      "name": "37.log"
+    },
+    {
+      "name": "37.xoutput"
+    },
+    {
+      "name": "38.log"
+    },
+    {
+      "name": "38.xoutput"
+    },
+    {
+      "name": "39.log"
+    },
+    {
+      "name": "39.xoutput"
+    },
+    {
+      "name": "310.log"
+    },
+    {
+      "name": "310.xoutput"
+    },
+    {
+      "name": "311.log"
+    },
+    {
+      "name": "311.xoutput"
+    },
+    {
+      "name": "312.log"
+    },
+    {
+      "name": "312.xoutput"
+    },
+    {
+      "name": "313.log"
+    },
+    {
+      "name": "313.xoutput"
+    },
+    {
+      "name": "314.log"
+    },
+    {
+      "name": "314.xoutput"
+    },
+    {
+      "name": "315.log"
+    },
+    {
+      "name": "315.xoutput"
+    },
+    {
+      "name": "316.log"
+    },
+    {
+      "name": "316.xoutput"
+    },
+    {
+      "name": "317.log"
+    },
+    {
+      "name": "317.xoutput"
+    },
+    {
+      "name": "318.log"
+    },
+    {
+      "name": "318.xoutput"
+    },
+    {
+      "name": "319.log"
+    },
+    {
+      "name": "319.xoutput"
+    },
+    {
+      "name": "average_0.txt"
+    },
+    {
+      "name": "average_1.txt"
+    },
+    {
+      "name": "average_2.txt"
+    },
+    {
+      "name": "average_3.txt"
+    },
+    {
+      "name": "summary.csv"
+    }
+  ],
+  "ins": [
+    0
+  ],
+  "outs": [
+    170
+  ]
+}

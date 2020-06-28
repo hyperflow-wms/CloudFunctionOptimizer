@@ -1,0 +1,591 @@
+{
+  "tasks": [
+    {
+      "name": "generateData",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "generateData.js",
+          "args": []
+        }
+      },
+      "ins": [
+        0
+      ],
+      "outs": [
+        1
+      ]
+    },
+    {
+      "name": "create_dat_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "0.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        2
+      ]
+    },
+    {
+      "name": "create_dat_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "1.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        3
+      ]
+    },
+    {
+      "name": "create_dat_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "2.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        4
+      ]
+    },
+    {
+      "name": "create_dat_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "createDat.js",
+          "args": [
+            "3.dat"
+          ]
+        }
+      },
+      "ins": [
+        1
+      ],
+      "outs": [
+        5
+      ]
+    },
+    {
+      "name": "execute_case_0_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "00.log",
+            "00.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "execute_case_0_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "01.log",
+            "01.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "execute_case_0_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "0.dat",
+            "02.log",
+            "02.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        2
+      ],
+      "outs": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "execute_case_1_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "10.log",
+            "10.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "execute_case_1_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "11.log",
+            "11.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "execute_case_1_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "1.dat",
+            "12.log",
+            "12.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        3
+      ],
+      "outs": [
+        16,
+        17
+      ]
+    },
+    {
+      "name": "execute_case_2_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "20.log",
+            "20.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        18,
+        19
+      ]
+    },
+    {
+      "name": "execute_case_2_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "21.log",
+            "21.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        20,
+        21
+      ]
+    },
+    {
+      "name": "execute_case_2_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "2.dat",
+            "22.log",
+            "22.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        4
+      ],
+      "outs": [
+        22,
+        23
+      ]
+    },
+    {
+      "name": "execute_case_3_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "30.log",
+            "30.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        24,
+        25
+      ]
+    },
+    {
+      "name": "execute_case_3_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "31.log",
+            "31.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        26,
+        27
+      ]
+    },
+    {
+      "name": "execute_case_3_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "ellipsoids-openmp",
+          "args": [
+            "3.dat",
+            "32.log",
+            "32.xoutput"
+          ]
+        }
+      },
+      "ins": [
+        5
+      ],
+      "outs": [
+        28,
+        29
+      ]
+    },
+    {
+      "name": "average_result_0",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "00.xoutput",
+            "01.xoutput",
+            "02.xoutput",
+            "average_0.txt"
+          ]
+        }
+      },
+      "ins": [
+        7,
+        9,
+        11
+      ],
+      "outs": [
+        30
+      ]
+    },
+    {
+      "name": "average_result_1",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "10.xoutput",
+            "11.xoutput",
+            "12.xoutput",
+            "average_1.txt"
+          ]
+        }
+      },
+      "ins": [
+        13,
+        15,
+        17
+      ],
+      "outs": [
+        31
+      ]
+    },
+    {
+      "name": "average_result_2",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "20.xoutput",
+            "21.xoutput",
+            "22.xoutput",
+            "average_2.txt"
+          ]
+        }
+      },
+      "ins": [
+        19,
+        21,
+        23
+      ],
+      "outs": [
+        32
+      ]
+    },
+    {
+      "name": "average_result_3",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "mean-pack-ell",
+          "args": [
+            "30.xoutput",
+            "31.xoutput",
+            "32.xoutput",
+            "average_3.txt"
+          ]
+        }
+      },
+      "ins": [
+        25,
+        27,
+        29
+      ],
+      "outs": [
+        33
+      ]
+    },
+    {
+      "name": "summary",
+      "function": "awsCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "summary.js",
+          "args": []
+        }
+      },
+      "ins": [
+        1,
+        33,
+        32,
+        31,
+        30
+      ],
+      "outs": [
+        34
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "generateData.js"
+    },
+    {
+      "name": "data.json"
+    },
+    {
+      "name": "0.dat"
+    },
+    {
+      "name": "1.dat"
+    },
+    {
+      "name": "2.dat"
+    },
+    {
+      "name": "3.dat"
+    },
+    {
+      "name": "00.log"
+    },
+    {
+      "name": "00.xoutput"
+    },
+    {
+      "name": "01.log"
+    },
+    {
+      "name": "01.xoutput"
+    },
+    {
+      "name": "02.log"
+    },
+    {
+      "name": "02.xoutput"
+    },
+    {
+      "name": "10.log"
+    },
+    {
+      "name": "10.xoutput"
+    },
+    {
+      "name": "11.log"
+    },
+    {
+      "name": "11.xoutput"
+    },
+    {
+      "name": "12.log"
+    },
+    {
+      "name": "12.xoutput"
+    },
+    {
+      "name": "20.log"
+    },
+    {
+      "name": "20.xoutput"
+    },
+    {
+      "name": "21.log"
+    },
+    {
+      "name": "21.xoutput"
+    },
+    {
+      "name": "22.log"
+    },
+    {
+      "name": "22.xoutput"
+    },
+    {
+      "name": "30.log"
+    },
+    {
+      "name": "30.xoutput"
+    },
+    {
+      "name": "31.log"
+    },
+    {
+      "name": "31.xoutput"
+    },
+    {
+      "name": "32.log"
+    },
+    {
+      "name": "32.xoutput"
+    },
+    {
+      "name": "average_0.txt"
+    },
+    {
+      "name": "average_1.txt"
+    },
+    {
+      "name": "average_2.txt"
+    },
+    {
+      "name": "average_3.txt"
+    },
+    {
+      "name": "summary.csv"
+    }
+  ],
+  "ins": [
+    0
+  ],
+  "outs": [
+    34
+  ]
+}
