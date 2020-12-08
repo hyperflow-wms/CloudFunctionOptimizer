@@ -7,7 +7,7 @@
     "bluebird": "^3.5.0",
     "csv": "3.0.2",
     "csv-parse": "^2.5.0",
-    "fast-csv": "2.4.1",
+    "fast-csv": "4.3.6",
     "serverless-google-cloudfunctions": "^1.2.0",
     "toposort": "^1.0.7",
     "hyperflow": "git://github.com/PawelBanach/hyperflow.git#master"
